@@ -1,0 +1,428 @@
+/*下拉菜单*/
+
+.ccui-hide {
+  display: none;
+}
+.ccui-select {
+  height: 32px;
+  width: 200px;
+  line-height: 32px;
+  position: relative;
+  cursor: pointer;
+  border: 1px solid #D6D6D6;
+}
+.ccui-select p {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  overflow: hidden;
+  color: #3d3d3d;
+  cursor: pointer;
+  position: absolute;
+  width: 170px;
+  padding: 0px 20px 0px 10px;
+}
+.ccui-select-list {
+  list-style: none;
+  position: absolute;
+  top: 34px;
+  background-color: white;
+  text-indent: 10px;
+  border: 1px solid #b7b7b7;
+  left: -1px;
+  width: 100%;
+  line-height: 26px;
+  cursor: pointer;
+  z-index: 9999;
+  font-size: 14px;
+  height: 200px;
+  overflow: auto;
+}
+.ccui-select-list li {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+}
+.ccui-select-list li:hover {
+  background-color: #DDDDDD;
+}
+
+//轮播图
+.ccui-slide{
+  width:100%;
+  height: 51%;
+  overflow: hidden;
+  position: relative;
+}
+.ccui-slide .ccui-slide-img{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  opacity: 0; /*初始不透明度为0，图片都看不见*/
+  transition: opacity 1.2s linear; /*--重点--定义一个关于透明度的transition*/
+}
+.ccui-slide .ccui-slide-fadein{
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 1;
+  transition: opacity 1.2s;
+
+}
+
+.ccui-slide-pagination{
+  position: absolute;
+  width: 100%;
+  bottom: 10px;
+  margin: 0 auto;
+  z-index: 1;
+  text-align:center;
+}
+.ccui-slide-pagination span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  background: white;
+  display: inline-block;
+  margin-right: 20px;
+}
+.ccui-slide-active{
+  background: #44C8C6 !important;
+}
+//input 组件
+.ccui-input{
+  position: relative;
+  border:1px solid #D6D6D6;
+  padding: 0 5px;
+  border-radius:4px;
+}
+.ccui-focus-error{
+  border-bottom:1px solid #E75853 ;
+}
+.ccui-input-error{
+  color:#E75853;
+  position: absolute;
+  right: 0;
+  top:-25px;
+  font-size: 14px;
+}
+.ccui-input input{
+  width: 100%;
+  font-size: 16px;
+  padding: 8px 0;
+  border: 0;
+}
+
+//form组件
+.ccui-form{
+  width: 100%;
+}
+//选择日期组件
+.ccui-date{
+  width: 50%;
+  position: relative;
+  .ccui-date-input {
+    width: 60%;
+    font-size: 16px;
+    padding:10px 29px;
+    color: #333;
+    border: #d6d6d6 solid 1px;
+    border-radius: 4px;
+  }
+  .ccui-date-icon{
+    position: absolute;
+    top: 11px;
+    left: 8px;
+    color:#c0c4cc;
+  }
+  .ccui-date-box{
+    width: 300px;
+    border: 1px solid #D6D6D6;
+    border-radius: 4px;
+    box-shadow: 0 2px 12px 0 rgba(0,0,0,.1);
+    background: white;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    z-index: 999;
+  }
+  .ccui-day-select {
+    display: flex;
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+    color: #606266;
+    font-weight: 500;
+  }
+  .ccui-date-w20{width: 20%;line-height: 1;}
+  .ccui-date-w60{width: 60%;font-size: 16px;line-height: 35px}
+  .ccui-date-btn{
+    display: inline-block;
+    width: 20px;
+    line-height: 33px;
+    color: #606266;
+    cursor: pointer;
+    border: none;
+    background: white;
+    font-size:20px;
+  }
+  .ccui-date-btn:hover{
+    color: #44C8C6;
+  }
+
+  .ccui-date-screen{
+      margin: 0 10px;
+  }
+  .ccui-date-week{
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ccc;
+  }
+  .ccui-date-weekbtn{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #606266;
+  }
+  .ccui-date-day{
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 10px 0px;
+  }
+  .ccui-date-daybtn{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    &.active {
+      background: #44C8C6;
+      color: white;
+    }
+    &:hover{
+      color:#44C8C6;
+    }
+  }
+  .ccui-date-daybtn.active:not(.disabled){
+    color: white;
+  }
+  .ccui-date-pcolor,.ccui-date-ncolor{
+    color: #c1c1c1;
+  }
+}
+//三级联动
+.ccui-city-select{
+  .fl{float: left;}
+  .ml10{margin-left: 10px;}
+}
+//音量条
+.ccui-volume{
+  width:100%;
+  position: relative;
+  //横向
+  .ccui-volume-crosswise{
+    height:16px;
+    padding:5px 0;
+    box-sizing: border-box;
+  }
+  .ccui-crosswise-bar{
+    width:100%;
+    height:6px;
+    background-color: #b4b4b4;
+    border-radius: 3px;
+    position: relative;
+    cursor: pointer;
+  }
+  .ccui-crosswise-l{
+    background-color: #4ac4c2;
+    height:100%;
+    border-radius: 3px;
+    width:0;
+  }
+  .ccui-crosswise-yuan{
+    width:16px;
+    height:16px;
+    border-radius: 50%;
+    background-color: #4ac4c2;
+    position: absolute;
+    z-index: 2;
+    top:0;
+    bottom: 0;
+    margin:auto;
+    cursor: pointer;
+  }
+  .ccui-volume-crosswise span{
+    font-size:16px;
+    color:#333;
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:-40px;
+    margin:auto;
+  }
+  //纵向
+  .ccui-volume-lengthways{
+    width:40px;
+    height:120px;
+    background-color: rgba(0,0,0,.7);
+  }
+  .ccui-volume-lengthways p{
+    color:#fff;
+    font-size: 14px;
+    line-height:28px;
+    height:32px;
+    text-align: center;
+  }
+  .ccui-lengthways-bar{
+    width:6px;
+    height:80px;
+    background-color:#fff;
+    border-radius: 3px;
+    margin-left: 17px;
+    position: relative;
+    cursor: pointer;
+  }
+  .ccui-lengthways-l{
+    position: absolute;
+    left:0;
+    bottom:0;
+    width:6px;
+    height:0;
+    border-radius: 3px;
+    background-color: #44C8C6;
+    z-index: 1;
+  }
+  .ccui-lengthways-yuan{
+    width:10px;
+    height:10px;
+    border-radius: 50%;
+    background-color:#b1b1b1;
+    //border:1px solid #c1c1c1;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    left:50%;
+    margin-left:-5px;
+    top:140px;
+    cursor: pointer;
+  }
+}
+
+//图片裁切
+// .ccui-cut{
+//   position: fixed;
+//   left:0;
+//   top:0;
+//   width:100%;
+//   height:100%;
+//   background-color:rgba(0,0,0,.3);
+//   z-index:1000;
+//   display:flex;
+//   justify-content: center;
+//   align-items: center;
+//   .ccui-cut-container{
+//     background-color:#fff;
+//     width:50%;
+//   }
+//   .ccui-cut-container img{
+//     width:100%;
+//     display:block;
+//   }
+// }
+
+//对话框
+.ccui-dialog{
+  width:100%;
+  height:100%;
+  position: fixed;
+  left:0;
+  top:0;
+  z-index:1000;
+  .ccui-dialog-wrap{
+    width:26.6667%;
+    height:320px;
+    background-color:#fff;
+    position: absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    margin:auto;
+    color:#333;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(186,204,207,.7);
+  }
+  .ccui-dialog-title{
+    width:100%;
+    height:64px;
+    background-color:#f2f2f2;
+    border-radius: 4px 4px 0 0;
+    font-size:24px;
+    line-height:64px;
+    font-weight:bold;
+  }
+  // .ccui-dialog-content{
+    
+  // }
+  .ccui-dialog-explain{
+    font-size: 24px;
+    padding:72px 0;
+  }
+  .ccui-dialog-btn button{
+    width:23.4375%;
+    min-width:60px;
+    height:40px;
+    box-sizing: border-box;
+    font-size:16px;
+    margin:0 5px;
+    cursor: pointer;
+  }
+}
+
+//按钮样式颜色
+.ccui-blue-btn{
+  border:1px solid #37A2A0;
+  background-color:#44c8c6;
+  color:#fff;
+  border-radius: 4px;
+  font-weight:400;
+}
+.ccui-blue-btn:hover{
+  background-color:#69D3D1;
+}
+.ccui-blue-btn:active{
+  background-color: #3DB4B2;
+}
+.ccui-blue-btn[disabled]{
+  background-color:#A1E3E2;
+  border:1px solid #9BD0CF;
+}
+.ccui-grey-btn{
+  border:1px solid #C7C7C7;
+  background-color:#F7F7F7;
+  color:#333;
+  border-radius: 4px;
+  font-weight:400;
+}
+.ccui-grey-btn:hover{
+  background-color:#fff;
+}
+.ccui-grey-btn:active{
+  background-color: #DEDEDE;
+}
+.ccui-grey-btn[disabled]{
+  background-color:#FBFBFB;
+  border:1px solid #C7C7C7;
+  color:#999;
+}

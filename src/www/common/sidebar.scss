@@ -1,0 +1,42 @@
+@charset "utf-8";
+.wy-sidebar{
+    background-color: #ffffff;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    width: 15%;
+    top:59px;
+  .wy-sidebar-header{
+    height: 59px;
+    border-right: #E6E6E6 solid 1px;
+    box-shadow: 1px 2px 3px #e4e8e7;
+    line-height: 60px;
+    font-size: 30px;
+    letter-spacing: 3px;
+  }
+  .wy-sidebar-header i{
+    font-size: 28px;
+    color: #00bcd4;
+    cursor: pointer;
+    margin-left: 0.2rem;
+  }
+  .wy-title{
+    border-top: 1px solid #e3e3e3;
+    color: #00bcd4;
+  }
+
+  .wy-list{
+    padding-left: 0.5rem;
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+  }
+
+   li i{
+    margin-right: 0.1rem;
+  }
+   li:hover, li.active ,.wy-on {
+    background-color: #f7faf9;
+    color: #00bcd4;
+  }
+}

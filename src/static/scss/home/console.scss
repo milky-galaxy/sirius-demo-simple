@@ -1,0 +1,82 @@
+@charset "utf-8";
+.wy-console{
+  //页面布局左边
+  .wy-console-left{
+    //width: 3.7rem;
+    width: 20%;
+    height: 100%;
+  }
+  .wy-console-applist{
+    //width:3.4rem;
+    margin-right: 0.3rem;
+    background-color: #ffffff;
+    height: 100%;
+  }
+  //创建应用按钮
+  .wy-console-create{
+    padding:0.3rem;
+    border-bottom: #E6E6E6 solid 1px;
+  }
+  .wy-console-btn{
+    font-size: 16px;
+    width: 100%;
+    padding:0.15rem 0;
+  }
+  //应用名称信息
+  .wy-console-appinfo{
+    padding:0.3rem;
+    border-bottom: #E6E6E6 solid 1px;
+    cursor: pointer;
+  }
+  .wy-console-appinfo:hover{
+    background-color: #F3F6F5;
+  }
+
+  .wy-console-appicon{
+    position: relative;
+  }
+  .wy-console-appicon img{
+    width: 48px;
+    height: 48px;
+    border-radius: 13px;
+    display: block;
+  }
+  .wy-console-appname,.wy-console-appid{
+    position: absolute;
+    top:5px;
+    left:63px;
+    font-size: 16px;
+    color: #999999;
+    width: 65%;
+  }
+  .wy-console-appid{
+    top:28px;
+  }
+
+  //页面布局中间
+  .wy-console-center{
+    margin-top: 0.3rem;
+    //width:12.5rem;
+    width:80%;
+    height: 100%;
+  }
+  .wy-console-message{
+    //width:12.2rem;
+    margin-right: 0.3rem;
+    background-color: #ffffff;
+    height: 100%;
+  }
+  //页面布局右边
+  .wy-console-right{
+    margin-top: 0.3rem;
+    //width:3rem;
+    width: 15%;
+    height: 100%;
+  }
+  .wy-console-ad{
+    //width:2.7rem;
+    margin-right: 0.3rem;
+    background-color: #ffffff;
+    height: 100%;
+  }
+}

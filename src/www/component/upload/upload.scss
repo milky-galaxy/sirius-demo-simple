@@ -1,0 +1,9 @@
+//上传
+.yg-upload{
+    width:100%;
+    position:relative;
+    cursor: pointer;
+    input[type="file"]{
+      display:none;
+    }
+}

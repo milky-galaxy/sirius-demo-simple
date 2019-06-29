@@ -1,0 +1,37 @@
+@charset "utf-8";
+.lostpage {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 0 auto;
+  padding: 0;
+  clear: both;
+  overflow: hidden;
+  .error-404 {
+    width: 100%;
+    padding: 180px 0 0 0;
+    display: inline;
+    float: left;
+  }
+  .icon {
+    font-size: 250px;
+  }
+  .error-toindex {
+    margin:80px 0 0 20px;
+    display:inline;
+    float:left;
+  }
+  .error-toindex h3 {
+    color: #333;
+    font-size: 30px;
+  }
+
+  .error-toindex p {
+    margin: 10px 0;
+    color: #666;
+    font-size: 16px;
+  }
+
+  .error-toindex a {
+    color: #44C8C6;
+  }
+}

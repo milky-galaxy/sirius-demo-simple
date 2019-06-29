@@ -1,0 +1,63 @@
+@charset "utf-8";
+.wy-login {
+  //登录弹出层
+  .wy-modal-bg{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    background: rgba(0, 0, 0, .5);
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    top: 0;
+    display: block;
+    left: 0;
+
+  }
+  .wy-pop {
+    width: 360px;
+    height: 400px;
+    padding: 40px 50px;
+    top: 50%;
+    left: 50%;
+    margin-left: -220px;
+    margin-top: -275px;
+    background: #fff;
+    position: absolute;
+    z-index: 1;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  }
+
+  .wy-pop h3 {
+    font-size: 30px;
+    font-weight: normal;
+    color: #45494C;
+  }
+
+  .wy-close-btn {
+    font-size: 36px;
+    line-height: .5;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #999;
+    font-weight: lighter;
+    cursor: pointer;
+  }
+  .wy-dd-code{
+    position: absolute;
+    z-index: 2;
+    padding: 40px 50px 0px;
+    top: 50%;
+    left: 50%;
+    margin-left: -220px;
+    margin-top: -195px;
+  }
+
+}
