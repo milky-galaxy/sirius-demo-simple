@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!--<link rel="icon" href="https://yg-static.youngget.com/favicon/f4599c055592ff645d8fc4485579e985.ico"  type="image/x-icon"/>-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <meta name="keywords" content="vue.js,vue2," />
+    <meta name="description" content="基于Vue2 + wbase/iconfont/iconfont.cssebrtc 的网络健身平台" />
+    <title>社区web应用管理</title>
+    <script>
+        // ;(function(win) {
+        //     var whdef = 100/1920;// 表示1920的设计图,使用100PX的默认值
+        //     var wH = window.innerHeight;// 当前窗口的高度
+        //     var wW = win.innerWidth;// 当前窗口的宽度
+        //     var rem = wW * whdef;// 以默认比例值乘以
+        //     document.documentElement.style.fontSize = rem+"px";
+        //
+        //     var Disabled = false;
+        //     win.onresize = function(){
+        //         if(!Disabled){
+        //             Disabled = true;
+        //             var twh = 100/1920;// 表示1920的设计图,使用100PX的默认值
+        //             var twH = window.innerHeight;// 当前窗口的高度
+        //             var tww= win.innerWidth;// 当前窗口的宽度
+        //             var trem = tww * twh;// 以默认比例值乘以
+        //             document.documentElement.style.fontSize = trem+"px";
+        //             console.log("窗口发生改变了哟！",trem);
+        //             setTimeout(()=>{Disabled = false;},300);
+        //         }
+        //     };
+        // })(window);
+
+          window.onresize = WyOnresize;
+          WyOnresize();
+          function WyOnresize(){
+              var twh = 100/1920;// 表示1920的设计图,使用100PX的默认值
+              var twH = window.innerHeight;// 当前窗口的高度
+              var tww= window.innerWidth;// 当前窗口的宽度
+              var trem = tww * twh;// 以默认比例值乘以
+              document.documentElement.style.fontSize = trem+"px";
+              console.log("窗口发生改变了哟！",trem);
+          };
+    </script>
+  </head>
+  <body>
+  <div id="wy-main">
+
+  </div>
+  </body>
+</html>
