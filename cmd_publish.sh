@@ -68,8 +68,8 @@ chmod +x ./ossutilmac64
 echo "[Credentials]" > $HOME/.ossutilconfig
 echo "language=CH" >> $HOME/.ossutilconfig
 echo "endpoint=oss-cn-shanghai.aliyuncs.com" >> $HOME/.ossutilconfig
-echo "accessKeyID=LTAIZFcDHjhs0IPR" >> $HOME/.ossutilconfig
-echo "accessKeySecret=URO31d5wszmC8UusQZVe0twsRSmRxq" >> $HOME/.ossutilconfig
+echo "accessKeyID=" >> $HOME/.ossutilconfig
+echo "accessKeySecret=" >> $HOME/.ossutilconfig
 #echo "stsToken=1" >> $HOME/.ossutilconfig
 #stsTokens授权服务端配置流程教程 https://help.aliyun.com/document_detail/32046.html
 #暂时没必要使用STS服务，可以后续通过持续集成解决密钥暴露不安全隐患问题。

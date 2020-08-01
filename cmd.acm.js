@@ -7,10 +7,10 @@ const path = require('path');
 const fs = require('fs');
 const ACMClient = require('acm-client');
 const acm = new ACMClient({
-    endpoint: 'acm.aliyun.com', // ACM 控制台查看
-    namespace: 'd29dc49c-9f01-479d-809d-de7f2179d1a4', // ACM 控制台查看
-    accessKey: 'LTAIZFcDHjhs0IPR', // ACM 控制台查看
-    secretKey: 'URO31d5wszmC8UusQZVe0twsRSmRxq', // ACM 控制台查看
+    endpoint: '', // ACM 控制台查看
+    namespace: '', // ACM 控制台查看
+    accessKey: '', // ACM 控制台查看
+    secretKey: '', // ACM 控制台查看
     requestTimeout: 6000, // 请求超时时间，默认 6s
 });
 
